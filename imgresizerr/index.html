@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="upload-box"> 
+            <p><b>Select Image</b></p>
+            <input type="file" id="imageInput">
+            <p>or, drag and drop an image here</p>
+        </div>
+
+        <div class="input-group">
+            <label>Width:</label>
+            <input type="number" id="widthInput" placeholder="Enter width">
+            <select id="widthUnit">
+                <option value="px">px</option>
+                <option value="cm">cm</option>
+            </select>
+
+            <label>Height:</label>
+            <input type="number" id="heightInput" placeholder="Enter height">
+            <select id="heightUnit">
+                <option value="px">px</option>
+                <option value="cm">cm</option>
+            </select>
+        </div>
+
+        <button class="btn" onclick="resizeImage()">Resize Image</button>
+    </div>
+</body>
+</html>
+    
